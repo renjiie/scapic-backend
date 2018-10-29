@@ -8,7 +8,7 @@
   "author": "Renjiie",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.18.5"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
