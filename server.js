@@ -12,19 +12,21 @@ const update = require('./controllers/update');
 const deleteuser = require('./controllers/deleteuser');
 //const url = 'https://s3.ap-south-1.amazonaws.com/scapic-others/json/models.json'
 
-
+app.use(cors());
 const db = knex({
   client: 'pg', 
   connection: {
-  	connectionString : process.env.DATABASE_URL,
-    ssl : true
+  	host:'127.0.0.1',
+  	user:'Renjiie',
+  	password : 'rennie!95',
+  	database:'smart_brain'
   }
 });
 
 
 
 app.use(bodyParser.json());
-app.use(cors());
+
 
 
 app.get('/',(req,res)=>{res.send('it is working')})
