@@ -1,6 +1,17 @@
+Replacing this
+{
+    "query": {
+            "match": {
+                    "Abstract": "lung"
+                }
+            }
+}
+
+with this
+
  query: {
       multi_match: {
-        query: 'express js',
-        fields: ['title', 'description']
+        query: 'lung',
+        fields: 'Abstract'
       }
     }
